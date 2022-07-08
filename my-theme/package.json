@@ -1,0 +1,25 @@
+{
+  "name": "my-theme",
+  "description": "A brief explanation of your theme",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "izcream*",
+    "email": "your@email.here"
+  },
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "config": {
+    "posts_per_page": 10,
+    "image_sizes": {},
+    "card_assets": true
+  },
+  "scripts": {
+    "dev": "pnpx tailwindcss src/css/tailwind.css -o assets/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.5"
+  }
+}

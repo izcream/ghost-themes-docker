@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  blog:
+    container_name: blog
+    image: ghost:alpine
+    ports:
+      - 2368:2368
+    volumes:
+      - ./my-theme:/var/lib/ghost/content/themes/my-theme
+      - ./data:/var/lib/ghost/content/data:z
+    environment:
+      - NODE_ENV=production
